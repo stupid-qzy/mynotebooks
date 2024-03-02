@@ -1,3 +1,9 @@
 site_name: My Docs
+nav:
+  - Homepage: index.md
+  - Notebooks:
+    - 离散数学及其应用(dm): dm/1.md
+    - 数据结构基础(fds): fds/1.md
+    - 数字逻辑设计: dld/1.md
 theme: 
   name: material
