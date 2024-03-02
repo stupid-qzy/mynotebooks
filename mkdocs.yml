@@ -1,9 +1,26 @@
-site_name: My Docs
+site_name: Null's notebooks
+
 nav:
   - Homepage: index.md
   - Notebooks:
-    - 离散数学及其应用(dm): dm/1.md
-    - 数据结构基础(fds): fds/1.md
+    - 离散数学及其应用(dm): 
+      - Chapter 1: dm/1.md
+    - 数据结构基础(fds): 
+      - Chapter 2: fds/2.md
     - 数字逻辑设计: dld/1.md
+
 theme: 
   name: material
+
+markdown_extensions:
+  - markdown.extensions.codehilite
+  - markdown.extensions.extra
+  - markdown.extensions.meta
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.arithmatex: 
+      generic: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
