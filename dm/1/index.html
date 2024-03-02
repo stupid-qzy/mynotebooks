@@ -1,0 +1,1485 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../fds/2/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>Chapter 1 - Null's notebooks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-1-the-foundations-logic-and-proofs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Null&#39;s notebooks" class="md-header__button md-logo" aria-label="Null's notebooks" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Null's notebooks
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Null&#39;s notebooks" class="md-nav__button md-logo" aria-label="Null's notebooks" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Null's notebooks
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homepage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    离散数学及其应用(dm)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            离散数学及其应用(dm)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-propositional-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Propositional Logic(命题逻辑)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Propositional Logic(命题逻辑)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propositions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propositions(命题)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truth-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables(真值表)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Operator(逻辑运算符)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logic Operator(逻辑运算符)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connective(连接符)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements(条件语句)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precedence(优先级)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-and-bit-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic and Bit Operations(逻辑和位运算)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-application-of-propositional-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Application of Propositional Logic(逻辑命题的应用)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Application of Propositional Logic(逻辑命题的应用)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#translating-english-sentences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translating English Sentences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Specifications(系统规范)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~~Boolean Search~~
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-puzzles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Puzzles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~~Logic Circuits~~
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-propositional-equivalences" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Propositional Equivalences(命题等值)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Propositional Equivalences(命题等值)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logical-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Equivalence(逻辑等值)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propositional-satisfiablilty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propositional Satisfiablilty(命题满足)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propositional Satisfiablilty(命题满足)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dual-of-a-compound-proposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dual of a Compound Proposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functionally-complete-collection-of-logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functionally Complete Collection of Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Forms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-predicates-and-quantifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Predicates and Quantifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-nested-quantifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Nested Quantifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-rules-of-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Rules of Inference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-introduction-to-proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Introduction to Proofs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-proof-methods-and-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 Proof Methods and Strategy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据结构基础(fds)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            数据结构基础(fds)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fds/2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dld/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数字逻辑设计
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-propositional-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Propositional Logic(命题逻辑)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Propositional Logic(命题逻辑)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#propositions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propositions(命题)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truth-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables(真值表)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Operator(逻辑运算符)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logic Operator(逻辑运算符)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connective(连接符)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements(条件语句)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Precedence(优先级)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-and-bit-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic and Bit Operations(逻辑和位运算)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-application-of-propositional-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Application of Propositional Logic(逻辑命题的应用)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Application of Propositional Logic(逻辑命题的应用)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#translating-english-sentences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Translating English Sentences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Specifications(系统规范)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~~Boolean Search~~
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-puzzles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Puzzles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      ~~Logic Circuits~~
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-propositional-equivalences" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Propositional Equivalences(命题等值)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Propositional Equivalences(命题等值)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logical-equivalence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Equivalence(逻辑等值)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propositional-satisfiablilty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propositional Satisfiablilty(命题满足)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propositional Satisfiablilty(命题满足)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dual-of-a-compound-proposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dual of a Compound Proposition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functionally-complete-collection-of-logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functionally Complete Collection of Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Forms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-predicates-and-quantifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Predicates and Quantifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-nested-quantifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Nested Quantifiers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-rules-of-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Rules of Inference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-introduction-to-proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Introduction to Proofs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-proof-methods-and-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 Proof Methods and Strategy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chapter-1-the-foundations-logic-and-proofs">Chapter 1 The Foundations:  Logic and Proofs</h1>
+<h2 id="11-propositional-logic">1.1 Propositional Logic(命题逻辑)</h2>
+<h3 id="propositions">Propositions(命题)</h3>
+<p><strong>proposition</strong>：一个<em>陈述句</em>，<em>要么真要么假，但不同时为真为假</em></p>
+<p><strong>proposition variables(命题变量)</strong> 一般用字母（e.g. <span class="arithmatex">\(p, q, r, s \dots\)</span>表示）</p>
+<p>命题的分类：</p>
+<ul>
+<li><strong>atomic proposition(原子命题)</strong>不能被表示成更简单的形式</li>
+<li><strong>compound proposition(复合命题)</strong>由一些命题通过<strong>logic operators</strong>连接而成</li>
+</ul>
+<h3 id="truth-tables">Truth Tables(真值表)</h3>
+<p>可以用来判断是否为<strong>Equivalent Propositons</strong>(后面会讲到)</p>
+<p>注（涉及第6章计数的内容）：</p>
+<ol>
+<li>如果有<span class="arithmatex">\(n\)</span>个命题变量，那么真值表就会有<span class="arithmatex">\(2^n\)</span>行</li>
+<li>如果有<span class="arithmatex">\(n\)</span>个命题变量，那么就可以构造出<span class="arithmatex">\(2^{2^n}\)</span>个不同的命题</li>
+</ol>
+<h3 id="logic-operator">Logic Operator(逻辑运算符)</h3>
+<blockquote>
+<p>设<span class="arithmatex">\(p, q\)</span>为两个不同的命题</p>
+</blockquote>
+<p><strong>Negation(否定)</strong>：<span class="arithmatex">\(\neg p\)</span> (read <em>not p</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\neg p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+<h4 id="connective">Connective(连接符)</h4>
+<ul>
+<li>
+<p><strong>Conjunction(合取)</strong>：<span class="arithmatex">\(p \land q\)</span> (read <em>p and q</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(q\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(p \land q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：有时候<em>but</em>也表示 <span class="arithmatex">\(\land\)</span></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Disjunction(析取)</strong>：<span class="arithmatex">\(p \lor q\)</span>​ (read <em>p or q</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(q\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(p \lor q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>Exclusive Or(XOR)(异或)</strong>：<span class="arithmatex">\(p \oplus q\)</span>​ (read <em>p XOR q</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(q\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(p \oplus q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：</p>
+<ol>
+<li><em>either…or…</em>表示XOR</li>
+<li><em>or</em>有时也表示XOR，具体结合语境看，所以<strong>or</strong>有两种含义：</li>
+<li><strong>Inclusive or</strong> : <span class="arithmatex">\(\lor\)</span>​</li>
+<li><strong>Exclusive or</strong> : <span class="arithmatex">\(\oplus\)</span></li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h4 id="conditional-statements">Conditional Statements(条件语句)</h4>
+<ul>
+<li>
+<p><strong>Conditional statements(Implication)</strong>：<span class="arithmatex">\(p \rightarrow q\)</span> (read <em>if p, then q</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(q\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(p \rightarrow q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">==F==</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：</p>
+<ol>
+<li><span class="arithmatex">\(p\)</span>被称为<strong>hypothesis(前提)</strong>, <span class="arithmatex">\(q\)</span>​被称为<strong>conclusion(假设)</strong></li>
+<li>条件语句的多种表述：<img alt="" src="D:\大学\CS\DM\notes\Images\Quicker_20240301_194446.png" />:heavy_exclamation_mark:重点记住这两个，很容易混淆：</li>
+<li>==<span class="arithmatex">\(p\)</span> only if <span class="arithmatex">\(q\)</span>==</li>
+<li>==<span class="arithmatex">\(q\)</span> unless <span class="arithmatex">\(\neg p\)</span>​==</li>
+<li>从真值表可以看出，前提和结论之间不必有任何关联，<span class="arithmatex">\(p \rightarrow q\)</span>只取决于<span class="arithmatex">\(p\)</span>和<span class="arithmatex">\(q\)</span>​的真值</li>
+<li>*Implication Law: <span class="arithmatex">\(p \rightarrow q \equiv \neg p \lor q\)</span>  (1.3节会讲到的)</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p><strong>Converse(逆命题)</strong>：<span class="arithmatex">\(q \rightarrow p\)</span></p>
+</li>
+<li>
+<p><strong>Contrapositive(逆否命题)</strong>：<span class="arithmatex">\(\neg q \rightarrow \neg p\)</span>​</p>
+</li>
+<li>
+<p><strong>Inverse(否命题)</strong>：<span class="arithmatex">\(\neg p \rightarrow \neg q\)</span></p>
+<blockquote>
+<p>注：逆否命题与原命题<strong>等价(Equivalent)</strong> (见1.3节)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Bioconditional(Bi-implication)(双条件句)</strong>：<span class="arithmatex">\(p \leftrightarrow q\)</span>​ (read <em>p if and only if q</em>)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(q\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(p \leftrightarrow q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">T</td>
+</tr>
+<tr>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">F</td>
+</tr>
+<tr>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">T</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：</p>
+<ol>
+<li>双条件句的多种表达：</li>
+<li><span class="arithmatex">\(p\)</span> is necessary and sufficient for <span class="arithmatex">\(q\)</span></li>
+<li>if <span class="arithmatex">\(p\)</span> then <span class="arithmatex">\(q\)</span>, and conversely</li>
+<li><span class="arithmatex">\(p\)</span> <em>iff</em> <span class="arithmatex">\(q\)</span> (<em>iff</em> = if and only if)</li>
+<li><span class="arithmatex">\(p\)</span> exactly when <span class="arithmatex">\(q\)</span></li>
+<li><span class="arithmatex">\(p \leftrightarrow q \equiv (p \rightarrow q) \land  (q \rightarrow p)\)</span>​</li>
+<li>双条件句的含蓄表述：可能使用<em>if, then</em> 或 <em>only if</em> 来表示 if and only if</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h4 id="precedence">Precedence(优先级)</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><em>Operator</em></th>
+<th style="text-align: center;"><em>Precedence</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\neg\)</span></td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\land\)</span></td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\lor\)</span></td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\rightarrow\)</span></td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\leftrightarrow\)</span></td>
+<td style="text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：</p>
+<ol>
+<li>2、3为一组，4、5为一组</li>
+<li>Parentheses(括号)优先级最高，当忘记优先级顺序时可用括号</li>
+</ol>
+</blockquote>
+<h3 id="logic-and-bit-operations">Logic and Bit Operations(逻辑和位运算)</h3>
+<p><strong>Bit(位)</strong>：一种表示两种可能值的记号，即0和1。计算机用bit表示信息，bit也能用来表示真值</p>
+<p><strong>Boolean variable(布尔变量)</strong>：值为<em>true</em>或<em>false</em>的变量</p>
+<blockquote>
+<p>上面所有表格中的“T”可用“1”代替，“F”可用“0”代替</p>
+</blockquote>
+<p><strong>Bit strings(位串)</strong>：由0个或多个位构成的序列，它的<em>长度</em>即位的个数</p>
+<p><strong>Bitwise operations(按位运算)</strong></p>
+<ul>
+<li><strong>bitwise OR(按位或)</strong></li>
+<li><strong>bitwise AND(按位与)</strong></li>
+<li><strong>bitwise XOR(按位异或)</strong></li>
+</ul>
+<p><img alt="" src="../Images/Quicker_20240302_114500.png" /></p>
+<blockquote>
+<p>补充知识（来自ex.49-51)</p>
+<p><strong>Fuzzy Logic(模糊逻辑)</strong>：一个命题的真值是[0, 1]间的数。真值为0的命题被认为是false，真值为1则被认为为true，0-1之间的数表明不同的真实程度。被用于人工智能中。</p>
+</blockquote>
+<h2 id="12-application-of-propositional-logic">1.2 Application of Propositional Logic(逻辑命题的应用)</h2>
+<h3 id="translating-english-sentences">Translating English Sentences</h3>
+<p>easy: 找原子命题，找逻辑运算符，然后组合起来</p>
+<h3 id="system-specifications">System Specifications(系统规范)</h3>
+<p>在上面部分的基础上多出<strong>consistent(一致)</strong>的概念：有一组命题变量的可能赋（真）值，对一组命题中的每一条命题均成立。</p>
+<h3 id="boolean-search">~~Boolean Search~~</h3>
+<blockquote>
+<p>~~(现在主流搜索引擎好像都没有这个功能吧)~~</p>
+</blockquote>
+<h3 id="logic-puzzles">Logic Puzzles</h3>
+<p>看看课本例题</p>
+<h3 id="logic-circuits">~~Logic Circuits~~</h3>
+<blockquote>
+<p>~~(数逻应该会讲吧)~~</p>
+</blockquote>
+<h2 id="13-propositional-equivalences">1.3 Propositional Equivalences(命题等值)</h2>
+<h3 id="logical-equivalence">Logical Equivalence(逻辑等值)</h3>
+<ul>
+<li><strong>Tautology(永真)</strong>：真值总是为真的命题</li>
+<li><strong>Contradiction(永假)</strong>：真值总是为假的命题</li>
+<li><strong>Contingency</strong>：既非永真亦非永假的命题</li>
+</ul>
+<hr />
+<p><strong>Logically equivalent</strong>的定义：</p>
+<ul>
+<li>定义1：在任何情况下都有相同的真值的复合命题</li>
+<li>:small_red_triangle: 定义2：$p \leftrightarrow q $​为<em>永真</em></li>
+</ul>
+<p>记为<span class="arithmatex">\(p \equiv q\)</span></p>
+<hr />
+<p>:star2:<strong>De Morgan Laws(德·摩根定律)</strong></p>
+<ul>
+<li><span class="arithmatex">\(\neg (p \land q) \equiv \neg p \lor \neg q\)</span></li>
+<li><span class="arithmatex">\(\neg(p \lor q) \equiv \neg p \land \neg q\)</span></li>
+</ul>
+<p>拓展版：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\neg(\bigvee ^ n _{j = 1}p_j) \equiv \bigwedge ^ n _{j = 1} \neg p_j\)</span>​</p>
+<blockquote>
+<p>即<span class="arithmatex">\(\neg(p_1 \lor p_2 \lor \dots \lor p_n) \equiv (\neg p_1 \land \neg p_2 \land \dots \land \neg p_n)\)</span></p>
+</blockquote>
+</li>
+<li>
+<p><span class="arithmatex">\(\neg (\bigwedge ^ n _{j = 1}p_j) \equiv \bigvee ^ n _{j = 1} \neg p_j\)</span></p>
+<blockquote>
+<p>即<span class="arithmatex">\(\neg (p_1 \land p_2 \land \dots \land p_n) \equiv (\neg p_1 \lor \neg p_2 \lor \dots \lor \neg p_n)\)</span></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>注：使用时注意改变连接符，且<span class="arithmatex">\(\equiv\)</span>两边连接符要一致:exclamation:</p>
+</blockquote>
+<hr />
+<p><em>conditional-disjunction equivalence</em>：<span class="arithmatex">\(p \rightarrow q \equiv \neg p \lor q\)</span></p>
+<hr />
+<p>:heavy_exclamation_mark::heavy_exclamation_mark::heavy_exclamation_mark:重要逻辑等价表</p>
+<p><img alt="" src="D:\大学\CS\DM\notes\Images\Quicker_20240301_205214.png" /></p>
+<p><img alt="" src="D:\大学\CS\DM\notes\Images\Quicker_20240301_205339.png" /></p>
+<p>一些补充：</p>
+<ul>
+<li><em>Exportation law</em>：<span class="arithmatex">\((p \land q) \rightarrow r \equiv p \rightarrow (q \rightarrow r)\)</span></li>
+<li><em>Absurdity law</em>：<span class="arithmatex">\((p \rightarrow q) \land (p \rightarrow \neg q) \equiv \neg p\)</span>​</li>
+</ul>
+<p><strong>构造新的逻辑等值</strong>：灵活使用上表规律转化出等价的命题，具体例子见书本</p>
+<h3 id="propositional-satisfiablilty">Propositional Satisfiablilty(命题满足)</h3>
+<p>当<em>存在某个对于命题变量的真值能使命题为真</em>，称这种命题是<strong>satisfiable(可满足的)</strong></p>
+<p>否则（即<em>所有可能得对于命题变量的真值都无法使命题为真</em>）称为<strong>unsatisfiable(不可满足的)</strong></p>
+<h4 id="application">Application</h4>
+<p><strong>The n-Queens Problem</strong></p>
+<p><strong>Sudoku Puzzle</strong></p>
+<h3 id="other-logical-operators">Other Logical Operators</h3>
+<h3 id="the-dual-of-a-compound-proposition">The Dual of a Compound Proposition</h3>
+<h3 id="functionally-complete-collection-of-logical-operators">Functionally Complete Collection of Logical Operators</h3>
+<h3 id="normal-forms">Normal Forms</h3>
+<h2 id="14-predicates-and-quantifiers">1.4 Predicates and Quantifiers</h2>
+<h2 id="15-nested-quantifiers">1.5 Nested Quantifiers</h2>
+<h2 id="16-rules-of-inference">1.6 Rules of Inference</h2>
+<h2 id="17-introduction-to-proofs">1.7 Introduction to Proofs</h2>
+<h2 id="18-proof-methods-and-strategy">1.8 Proof Methods and Strategy</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
